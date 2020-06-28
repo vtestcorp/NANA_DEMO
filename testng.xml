@@ -13,7 +13,9 @@
 		<parameter name="wdaLocalPort" value="" />
 		<parameter name="iOSversion" value="" />
 		<classes>
-			<class name="com.nana.testcases.OpenNAN" />
+			<class name="com.nana.testcases.TC001_Place_Order"/>
+			<class name="com.nana.testcases.TC002_Edit_Order"/>
+			<class name="com.nana.testcases.TC004_Delete_Order"/>
 		</classes>
 	</test>
 </suite>
