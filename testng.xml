@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1" parallel="tests" thread-count="1">
+
+	<test name="Device 01">
+		<parameter name="type" value="Android"></parameter>
+		<parameter name="APPIUM_SERVER_URL" value="http://127.0.0.1:4723/wd/hub" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="deviceName" value="OnePlus 5T" />
+		<parameter name="appPackage" value="com.exa.nanamarket.preproduction" />
+		<parameter name="appActivity" value="com.exa.nanamarket.SplashActivity" />
+		<parameter name="platformVersion" value="9.0.11" />
+		<parameter name="wdaLocalPort" value="" />
+		<parameter name="iOSversion" value="" />
+		<classes>
+			<class name="com.nana.testcases.OpenNAN" />
+		</classes>
+	</test>
+</suite>

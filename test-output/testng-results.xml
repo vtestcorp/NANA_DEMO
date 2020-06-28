@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="96917" started-at="2020-06-28T10:05:08Z" finished-at="2020-06-28T10:06:45Z">
+    <groups>
+    </groups>
+    <test name="Device 01" duration-ms="96917" started-at="2020-06-28T10:05:08Z" finished-at="2020-06-28T10:06:45Z">
+      <class name="com.nana.testcases.OpenNAN">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nana.testcases.OpenNAN@4411d970]" name="setUp" is-config="true" duration-ms="425" started-at="2020-06-28T15:35:08Z" finished-at="2020-06-28T15:35:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nana.testcases.OpenNAN@4411d970]" name="beforeTest" is-config="true" duration-ms="12476" started-at="2020-06-28T15:35:08Z" finished-at="2020-06-28T15:35:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OnePlus 5T]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[com.exa.nanamarket.preproduction]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[com.exa.nanamarket.SplashActivity]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.0.11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="add_Products()[pri:0, instance:com.nana.testcases.OpenNAN@4411d970]" name="add_Products" duration-ms="84417" started-at="2020-06-28T15:35:21Z" finished-at="2020-06-28T15:36:45Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.nana.testcases.OpenNAN.select_Products_From_Meat_Poultary(OpenNAN.java:69)
+	at com.nana.testcases.OpenNAN.add_Products(OpenNAN.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Products -->
+        <test-method status="FAIL" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.nana.testcases.OpenNAN@4411d970]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-28T15:36:45Z" finished-at="2020-06-28T15:36:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=add_Products status=FAILURE method=OpenNAN.add_Products()[pri:0, instance:com.nana.testcases.OpenNAN@4411d970] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.nana.base.BaseClass.teardown(BaseClass.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:709)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.nana.testcases.OpenNAN@4411d970]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-28T15:36:45Z" finished-at="2020-06-28T15:36:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nana.testcases.OpenNAN -->
+    </test> <!-- Device 01 -->
+  </suite> <!-- Suite -->
+</testng-results>

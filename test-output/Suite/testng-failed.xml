@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="appPackage" value="com.exa.nanamarket.preproduction"/>
+  <parameter name="appActivity" value="com.exa.nanamarket.SplashActivity"/>
+  <parameter name="platformVersion" value="9.0.11"/>
+  <parameter name="type" value="Android"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="OnePlus 5T"/>
+  <parameter name="APPIUM_SERVER_URL" value="http://127.0.0.1:4723/wd/hub"/>
+  <parameter name="wdaLocalPort" value=""/>
+  <parameter name="iOSversion" value=""/>
+  <test name="Device 01">
+    <parameter name="appPackage" value="com.exa.nanamarket.preproduction"/>
+    <parameter name="appActivity" value="com.exa.nanamarket.SplashActivity"/>
+    <parameter name="platformVersion" value="9.0.11"/>
+    <parameter name="type" value="Android"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="OnePlus 5T"/>
+    <parameter name="APPIUM_SERVER_URL" value="http://127.0.0.1:4723/wd/hub"/>
+    <parameter name="wdaLocalPort" value=""/>
+    <parameter name="iOSversion" value=""/>
+    <classes>
+      <class name="com.nana.testcases.OpenNAN"/>
+    </classes>
+  </test> <!-- Device 01 -->
+  <test name="Device 01(failed)" parallel="tests">
+    <parameter name="appPackage" value="com.exa.nanamarket.preproduction"/>
+    <parameter name="appActivity" value="com.exa.nanamarket.SplashActivity"/>
+    <parameter name="platformVersion" value="9.0.11"/>
+    <parameter name="type" value="Android"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="OnePlus 5T"/>
+    <parameter name="APPIUM_SERVER_URL" value="http://127.0.0.1:4723/wd/hub"/>
+    <parameter name="wdaLocalPort" value=""/>
+    <parameter name="iOSversion" value=""/>
+    <classes>
+      <class name="com.nana.testcases.OpenNAN">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="beforeTest"/>
+          <include name="add_Products"/>
+        </methods>
+      </class> <!-- com.nana.testcases.OpenNAN -->
+    </classes>
+  </test> <!-- Device 01(failed) -->
+</suite> <!-- Failed suite [Suite] -->
